@@ -1,5 +1,4 @@
 #!/bin/bash
 set -e
 
-mvnw clean install
-mvnw docker:build
+./mvnw clean install docker:build
