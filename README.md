@@ -15,7 +15,7 @@ Frontend
 Docker
 
 # Dockerization
-Frontend has Dockerfile-s to create images. It runs in nginx server with additional configuration to access backend (see ui\nginx\default.conf)
+Frontend has Dockerfile to create images. It runs in nginx server with additional configuration to access backend (see ui\nginx\default.conf)
 Backend docker image can be created with mvn docker:build.
 
 # How to create images
