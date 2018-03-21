@@ -1,0 +1,12 @@
+version: '3'
+services:
+  tomatoes-api:
+    image: "dmironenko/tomatoes:1.0.0"
+    ports:
+     - "8080:8080"
+  tomatoes-ui:
+    image: "dmironenko/tomatoes-ui:1.0.0"
+    ports:
+     - "80:80"
+    links:
+     - "tomatoes-api:tomatoes-api"
